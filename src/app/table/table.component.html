@@ -1,0 +1,29 @@
+<app-nav></app-nav>
+<div class="container">
+    <div class="pt-4">
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th>Location</th>
+                    <th>Confirmed</th>
+                    <th>Deceased</th>
+                    <th>Recovered</th>
+                    <th>Updated</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let country of model">
+                    <td>{{country.location}}</td>
+                    <td>{{country.confirmed}}</td>
+                    <td>{{country.dead}}</td>
+                    <td>{{country.recovered}}</td>
+                    <td>{{country.updated}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);" >
+    ©2021 Tata Consultancy Services Limited. All Rights Reserved.
+</div>

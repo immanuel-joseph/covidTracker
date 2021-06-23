@@ -1,0 +1,46 @@
+<app-nav></app-nav>
+<div class="container">
+    <h3 class="text-center pt-4"><u>Covid19 Case Stats in {{model.location}}</u></h3>&nbsp;
+    <div class="row  text-center">
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr> 
+                        <th>Active Cases</th>
+                        <th>Confirmed Cases</th>
+                        <th>Deceased Cases</th>
+                        <th>Recovered Cases</th>
+                        
+                    </tr>                    
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="active">{{activeCases}}</td>
+                        <td id="confirm">{{model.confirmed}}</td>
+                        <td id="dead">{{model.dead}}</td>
+                        <td id="recover">{{model.recovered}}</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    <div class="row-md-8 offset-md-2">
+        <google-chart  
+    [type]="chartData.type" 
+    [data]="chartData.data" 
+    [columns]="chartData.chartColumns" 
+    [width]="chartData.width"
+    [height]="chartData.height"
+    [options]="chartData.options"
+    > 
+    
+    </google-chart>  
+    
+    
+    
+    </div>
+   
+    
+</div>
+
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);" >
+    ©2021 Tata Consultancy Services Limited. All Rights Reserved.
+</div>
