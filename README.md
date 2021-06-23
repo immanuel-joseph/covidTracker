@@ -8,6 +8,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 5. Google chart's 3D Piechart is used to visualize the data for confirmed, recovered, deceased and active cases.
 
 
+P.S added a video demo to the repo.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
